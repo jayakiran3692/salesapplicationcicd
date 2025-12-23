@@ -1,0 +1,24 @@
+{
+  "welcomeFile": "salesapplication/webapp/",
+  "authenticationMethod": "route",
+  "sessionTimeout": 10,
+  "pluginMetadataEndpoint": "/metadata",
+  "routes": [
+    {
+      "source": "^/salesapplication/webapp/(.*)$",
+      "target": "$1",
+      "localDir": "salesapplication/webapp/",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/(.*)$",
+      "destination": "srv-api",
+      "authenticationType": "xsuaa"
+    }
+  ],
+  "logout": {
+    "logoutEndpoint": "/my/logout",
+    "logoutPage": "https://www.google.com"
+  }
+}

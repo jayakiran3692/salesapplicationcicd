@@ -1,0 +1,5 @@
+ID,parent_ID,Material,Quantity,NetPrice
+ITEM-001,SOA-001,Laptop,2,85000
+ITEM-002,SOA-001,Mouse,5,1500
+ITEM-003,SOA-002,Keyboard,3,2500
+ITEM-004,SOA-002,Monitor,1,18000
